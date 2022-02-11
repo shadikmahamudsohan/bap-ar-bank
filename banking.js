@@ -21,9 +21,9 @@ function updateBalance(amount, isAdd) {
     const balanceTotal = document.getElementById('balance-total');
     const previousBalanceTotal = getCurrentBalance();
     if (isAdd == true) {
-        return balanceTotal.innerText = previousBalanceTotal + amount;
+        balanceTotal.innerText = previousBalanceTotal + amount;
     } else {
-        return balanceTotal.innerText = previousBalanceTotal - amount;
+        balanceTotal.innerText = previousBalanceTotal - amount;
     }
 }
 // handle deposit button
